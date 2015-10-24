@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/background"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_home_page" tools:context=".HomePage">
+    tools:showIn="@layout/activity_home_page" tools:context=".HomePage"
+    android:weightSum="1">
 
-    <TextView android:text="Hello 钟健伟!" android:layout_width="wrap_content"
+    <TextView android:text="钟健伟,你好! genymotion works fine" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/linerlayout"
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal|italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/invoker" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/invoker" />
+
+    <CheckBox
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox"
+        android:layout_weight="0.08"
+        android:textStyle="italic" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_button"
+        android:text="按下有提示信息"/>
+
+</LinearLayout>

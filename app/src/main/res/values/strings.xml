@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">My Applicationa</string>
+    <string name="app_name">第一个APP</string>
     <string name="action_settings">Settings</string>
+    <string name="linerlayout">linerlayout</string>
+    <string name="first_activity_name">My First Activity</string>
+    <string name="button_1">跳到第二个活动</string>
+    <string name="button_2">第二个按钮</string>
 </resources>
